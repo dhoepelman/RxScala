@@ -16,9 +16,7 @@
 
 package rx.lang.scala
 
-import rx.annotations.{Beta, Experimental}
-import rx.exceptions.OnErrorNotImplementedException
-import rx.functions.FuncN
+import io.reactivex.annotations.{Beta, Experimental}
 import rx.lang.scala.observables.{AsyncOnSubscribe, ConnectableObservable, ErrorDelayingObservable, SyncOnSubscribe}
 
 import scala.concurrent.duration
