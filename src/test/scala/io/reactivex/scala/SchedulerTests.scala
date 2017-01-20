@@ -1,4 +1,4 @@
-package rx.lang.scala
+package io.reactivex.scala
 
 import java.util.concurrent.TimeUnit
 

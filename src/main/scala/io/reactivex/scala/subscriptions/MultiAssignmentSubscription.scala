@@ -13,8 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package rx.lang.scala.subscriptions
+package io.reactivex.scala.subscriptions
 
+import io.reactivex.scala.Subscription
 import rx.lang.scala._
 
 object MultipleAssignmentSubscription {

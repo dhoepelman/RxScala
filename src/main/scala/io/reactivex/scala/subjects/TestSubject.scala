@@ -13,8 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package rx.lang.scala.subjects
+package io.reactivex.scala.subjects
 
+import io.reactivex.scala.Subject
+import io.reactivex.scala.schedulers.TestScheduler
 import rx.lang.scala.Subject
 import rx.lang.scala.schedulers.TestScheduler
 

@@ -14,10 +14,11 @@
  * limitations under the License.
  */
 
-package rx.lang.scala.observables
+package io.reactivex.scala.observables
 
+import io.reactivex.scala.{Observable, Subscription}
 import rx.annotations.Beta
-import rx.lang.scala.{Observable, Subscription, Subscriber}
+import rx.lang.scala.{Observable, Subscriber, Subscription}
 import rx.lang.scala.JavaConversions._
 
 /**

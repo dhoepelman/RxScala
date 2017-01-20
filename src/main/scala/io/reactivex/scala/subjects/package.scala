@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package rx.lang.scala
+package io.reactivex.scala
 
 /**
  * Subjects are Observers and Observables at the same time.

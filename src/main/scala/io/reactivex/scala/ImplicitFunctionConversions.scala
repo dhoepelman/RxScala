@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package rx.lang.scala
+package io.reactivex.scala
 
 import java.lang.Exception
 import java.{ lang => jlang }
@@ -29,7 +29,7 @@ import rx.lang.scala.JavaConversions._
  * the `rx.Observable` directly instead of using `rx.lang.scala.Observable` or if one wants
  * to use a Java library taking/returning `Func`s and `Action`s.
  * This object only contains conversions between functions. For conversions between types,
- * use [[rx.lang.scala.JavaConversions]].
+ * use [[JavaConversions]].
  */
 object ImplicitFunctionConversions {
 

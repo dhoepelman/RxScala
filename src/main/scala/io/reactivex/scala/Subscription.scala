@@ -30,7 +30,7 @@
  * limitations under the License.
  */
 
-package rx.lang.scala
+package io.reactivex.scala
 
 import rx.functions.Action0
 

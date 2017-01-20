@@ -13,9 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package rx.lang.scala.schedulers
+package io.reactivex.scala.schedulers
 
 import java.util.concurrent.Executor
+
+import io.reactivex.scala.Scheduler
+
 import scala.concurrent.{ExecutionContext, ExecutionContextExecutor}
 import rx.lang.scala.Scheduler
 

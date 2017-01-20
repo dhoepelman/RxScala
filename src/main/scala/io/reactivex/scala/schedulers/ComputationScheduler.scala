@@ -1,5 +1,6 @@
-package rx.lang.scala.schedulers
+package io.reactivex.scala.schedulers
 
+import io.reactivex.scala.Scheduler
 import rx.lang.scala.Scheduler
 
 

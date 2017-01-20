@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package rx.lang.scala
+package io.reactivex.scala
 
 import io.reactivex.annotations.{Beta, Experimental}
 import rx.lang.scala.observables.{AsyncOnSubscribe, ConnectableObservable, ErrorDelayingObservable, SyncOnSubscribe}

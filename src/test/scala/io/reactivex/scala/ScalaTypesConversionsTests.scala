@@ -1,4 +1,4 @@
-package rx.lang.scala
+package io.reactivex.scala
 
 import org.junit.Test
 import org.scalatest.junit.JUnitSuite

@@ -1,5 +1,7 @@
-package rx.lang.scala.observables
+package io.reactivex.scala.observables
 
+import io.reactivex.scala.Notification.OnCompleted
+import io.reactivex.scala.{Notification, Observable}
 import org.junit.Test
 import org.junit.Assert._
 import org.scalatest.junit.JUnitSuite
@@ -12,7 +14,7 @@ class SyncOnSubscribeTests extends JUnitSuite {
   def testStateful(): Unit = {
     val o = Observable.create(SyncOnSubscribe(() => 0)(count =>
       if(count > 3)
-        (Notification.OnCompleted, count)
+        (OnCompleted, count)
       else
         (Notification.OnNext(count), count+1)
     ))

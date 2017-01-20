@@ -13,12 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package rx.lang.scala.observers
+package io.reactivex.scala.observers
 
 import java.util.concurrent.TimeUnit
+
+import io.reactivex.scala.Subscriber
+
 import scala.collection.JavaConverters._
 import scala.concurrent.duration.Duration
-import rx.{Subscriber => JSubscriber, Observer => JObserver, Subscription => JSubscription}
+import rx.{Observer => JObserver, Subscriber => JSubscriber, Subscription => JSubscription}
 import rx.annotations.Experimental
 import rx.observers.{TestSubscriber => JTestSubscriber}
 import rx.lang.scala.{Observable, Observer, Subscriber}

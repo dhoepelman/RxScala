@@ -1,5 +1,7 @@
-package rx.lang.scala.observables
+package io.reactivex.scala.observables
 
+import io.reactivex.scala.Notification.OnCompleted
+import io.reactivex.scala.{Notification, Observable}
 import org.junit.Test
 import org.junit.Assert._
 import org.scalatest.junit.JUnitSuite
@@ -13,7 +15,7 @@ class AsyncOnSubscribeTests extends JUnitSuite {
     val last = 2000L
     val o = Observable.create(AsyncOnSubscribe(() => 0L)((count,demand) =>
       if(count > last)
-        (Notification.OnCompleted, count)
+        (OnCompleted, count)
       else {
         val to = math.min(count+demand, last+1)
         val next = Observable.from(count until to)

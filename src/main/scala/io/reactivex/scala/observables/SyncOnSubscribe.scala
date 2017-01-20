@@ -1,5 +1,6 @@
-package rx.lang.scala.observables
+package io.reactivex.scala.observables
 
+import io.reactivex.scala.Notification
 import rx.annotations.Experimental
 import rx.lang.scala.{Notification, Observable}
 
@@ -38,7 +39,7 @@ object SyncOnSubscribe {
     val onUnsubscribeF = onUnsubscribe
 
     new rx.observables.SyncOnSubscribe[S,T] {
-      import rx.lang.scala.JavaConversions._
+      import io.reactivex.scala.JavaConversions._
       override def generateState(): S = generator()
       override def next(state: S, observer: rx.Observer[_ >: T]): S =
         nextF(state) match {

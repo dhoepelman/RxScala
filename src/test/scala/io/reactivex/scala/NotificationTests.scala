@@ -13,12 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package rx.lang.scala
+package io.reactivex.scala
 
-
+import io.reactivex.scala.Notification.OnCompleted
 import org.junit.{Assert, Test}
 import org.junit.Assert._
 import org.scalatest.junit.JUnitSuite
+
 import scala.concurrent.duration._
 import scala.language.postfixOps
 import org.mockito.Mockito._

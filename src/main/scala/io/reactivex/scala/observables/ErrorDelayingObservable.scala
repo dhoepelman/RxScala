@@ -1,9 +1,9 @@
-package rx.lang.scala.observables
+package io.reactivex.scala.observables
 
+import io.reactivex.scala.Observable
 import rx.annotations.Experimental
 import rx.lang.scala.JavaConversions._
 import rx.lang.scala._
-import ImplicitFunctionConversions._
 
 /**
  * $experimental An [[Observable]] that provides operators which delay errors when composing multiple [[Observable]]s.

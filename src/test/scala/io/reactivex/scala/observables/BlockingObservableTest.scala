@@ -13,13 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package rx.lang.scala.observables
+package io.reactivex.scala.observables
+
+import io.reactivex.scala.Observable
 
 import scala.concurrent.Await
 import scala.concurrent.duration._
 import org.junit.Assert._
-import org.junit.{Test, Ignore}
+import org.junit.{Ignore, Test}
 import org.scalatest.junit.JUnitSuite
+
 import scala.language.postfixOps
 import rx.lang.scala.Observable
 

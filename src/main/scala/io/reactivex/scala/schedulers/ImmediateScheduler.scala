@@ -13,18 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package rx.lang.scala.schedulers
+package io.reactivex.scala.schedulers
 
 import rx.lang.scala.Scheduler
 
-object NewThreadScheduler {
+object ImmediateScheduler {
 
   /**
-   * Returns a [[rx.lang.scala.Scheduler]] that creates a new `java.lang.Thread` for each unit of work.
+   * Returns a [[rx.lang.scala.Scheduler]] that executes work immediately on the current thread.
    */
-  def apply(): NewThreadScheduler =  {
-    new NewThreadScheduler(rx.schedulers.Schedulers.newThread())
+  def apply(): ImmediateScheduler =  {
+    new ImmediateScheduler(rx.schedulers.Schedulers.immediate())
   }
 }
 
-class NewThreadScheduler private[scala] (val asJavaScheduler: rx.Scheduler) extends Scheduler {}
+class ImmediateScheduler private[scala] (val asJavaScheduler: rx.Scheduler)
+  extends Scheduler {}
+
+
